@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 
 body {
-    /* background:url(/dist/images/die_bratwurst.png) center no-repeat;
-    background-attachment: fixed; */
     font-family: 'Germania One', cursive;
 }
 html {
-    background: url("/dist/images/die_bratwurst.png") no-repeat center center fixed;
+    background: url("./images/die_bratwurst.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -42,7 +40,6 @@ html {
     width: 100%;
     height: 8.5vw;
     z-index: -2;
-
 }
 #title {
     position: relative;
@@ -63,7 +60,6 @@ html {
     margin-bottom: 0.5vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .list-class {
     display: flex;
     font-size: 2.5vw;
@@ -74,7 +70,6 @@ html {
     color: white;
     z-index: 1;
 }
-
 .list-class:hover {
     color: rgb(167, 167, 167);
 }
@@ -92,7 +87,7 @@ html {
     height: 50vw;
     width: 50vw;
     background-color: black;
-    opacity: 70%;
+    opacity: 80%;
 }
 #image-box:after {
     content: "";
@@ -111,7 +106,6 @@ html {
 }
 #footer {
     position: absolute;
-
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -121,17 +115,16 @@ html {
     background-color: black;
     color: white;
     width: 100%;
-    height: 6vw;
+    height: 2em;
 }
 #copyright {
     margin: 0;
-    font-size: 2.5vw;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
 }
 #github-image {
-    height: 3vw;
-    margin-left: 2vw;
+    height: 1.2em;
+    margin-left: 0.5em;
 }
 #github-image:hover {
     cursor: pointer;
