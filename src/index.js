@@ -26,7 +26,7 @@ const display = (() => {
         const header = document.getElementById('header'); //header content div
         h1.id = "title";
         h1.innerText = "Die Bratwurst";
-        document.body.appendChild(h1);
+        getContent.appendChild(h1);
     }
 
     const createMenu = () => {
@@ -55,12 +55,52 @@ const display = (() => {
         getContent.appendChild(secondBlock);
     }
 
+    const welcome = () => {
+        const div = document.createElement('div');
+        div.id = "image-box";
+        getContent.appendChild(div);
+
+        const getImageBox = document.getElementById('image-box');
+        const paragraph = document.createElement('p');
+        paragraph.id = "paragraph-header";
+        paragraph.innerText = "The best Bratwurst on this side of the World!";
+        getImageBox.appendChild(paragraph);
+
+        const img = document.createElement('img');
+        img.id = "hello-image";
+        img.src = 'images/brat-cartoon.jpg';
+        getImageBox.appendChild(img);
+    }
+
+    const footer = () => {
+
+        const div = document.createElement('div');
+        div.id = "footer";
+        getContent.appendChild(div);
+
+        const getFooter = document.getElementById('footer');
+        const text = document.createElement('h6');
+        text.id = "copyright";
+        text.innerHTML = "Copyright &copy; 2021 mhjarvis";
+        getFooter.appendChild(text);
+
+        const img = document.createElement('img');
+        img.id = "github-image";
+        img.src = "images/github.png";
+        img.onclick = () => {
+            window.location.href = "https://github.com/mhjarvis";
+        };
+        getFooter.appendChild(img);
+
+        
+    }
+
 
     createTitle();
     createHeader();
     createMenu();
-
-
+    welcome();
+    footer();
 
 
 

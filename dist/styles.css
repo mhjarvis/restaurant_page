@@ -12,12 +12,9 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
-body {
-}
 #content {
     display: flex;
     flex-flow: column;
-
 }
 #header {
     display: flex;
@@ -45,6 +42,7 @@ body {
     width: 100%;
     height: 8.5vw;
     z-index: -2;
+
 }
 #title {
     position: relative;
@@ -54,6 +52,7 @@ body {
     top: -5px;
     margin: 0;
     font-family: 'Germania One', cursive;
+    z-index: 1;
 }
 #nav {
     display: flex;
@@ -79,141 +78,61 @@ body {
 .list-class:hover {
     color: rgb(167, 167, 167);
 }
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
-
-
-#header {
-    position: fixed;
+#image-box {
+    position: absolute;
     display: flex;
     flex-flow: column;
-    background-color: black;
-    color: white;
-    font-size: 2em;
-    top: 0;
+    align-items: center;
+    width: 50%;
     left: 0;
-    width: 100%;
-    z-index: 1;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    margin: auto;
+    height: 50vw;
+    width: 50vw;
+    background-color: black;
+    opacity: 70%;
 }
-#header h1 {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 10px 0;
-      
+#image-box:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+#paragraph-header {
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    padding: 0 2vw 0 2vw;
+}
+#hello-image {
+    width: 30vw;
+    height: 30vw;
 }
 #footer {
+    position: absolute;
+
     display: flex;
-    background-color: black;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
-    color: white;
-    position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 5%;
-}
-
-#nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0;
-    margin: 0 0 20px 0;
-}
-.nav-item {
-    list-style-type: none;
-    padding: 0 20px 0 20px;
-}
-.nav-item:hover {
-    color: rgb(194, 187, 187);
-}
-#content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-#content-div {
-    position: relative;
-    width: 50%;
-    height: auto;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin: 30% auto 30% auto;
-    padding: 0;
-    justify-content: space-between;
     background-color: black;
-    opacity: 0.8
-}
-#tagline {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
     color: white;
-    width: 70%;
-    text-align: center;
-    font-size: 1.5em;
-    
+    width: 100%;
+    height: 6vw;
 }
-#brat-cartoon {
-    width: 60%;
-    height: 60%;
-    position: relative;
-    top: 5%;
-    padding: 0 0 5% 0;
+#copyright {
+    margin: 0;
+    font-size: 2.5vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
 #github-image {
-    max-height: 1.2em;
-    margin-left: 0.5em;
-    background-color: black;
+    height: 3vw;
+    margin-left: 2vw;
 }
-
- */
-
-
-
-
-
-
-
-
-/* #header {
-    display: inline-flex;
-    flex-direction: column;
-    background-color: black;
-    font-size: 2em;
-    color: white;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-
+#github-image:hover {
+    cursor: pointer;
 }
-#header h1 {
-    display: flex;
-    justify-content: center;
-}
-#footer {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    font-size: 2em;
-    color: white;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-#nav-list {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-#nav-list li {
-    margin: 0 20px 0 20px;
-} */
